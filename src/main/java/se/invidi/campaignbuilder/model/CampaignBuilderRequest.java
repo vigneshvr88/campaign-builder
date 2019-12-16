@@ -9,5 +9,5 @@ import java.util.List;
 @ApiModel
 public class CampaignBuilderRequest {
 
-    private List<CampaignInformation> campaignInformationList;
+    public List<CampaignInformation> campaignInformationList;
 }
