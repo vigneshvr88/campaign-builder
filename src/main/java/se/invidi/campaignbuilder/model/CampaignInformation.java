@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class CampaignInformation {
-    private String customer;
-    private int impressionsPerCampaign;
-    private int pricePerCampaign;
+    public String customer;
+    public int impressionsPerCampaign;
+    public int pricePerCampaign;
 }

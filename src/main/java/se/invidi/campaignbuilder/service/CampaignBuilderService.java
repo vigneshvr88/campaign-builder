@@ -8,6 +8,8 @@ public class CampaignBuilderService {
     public static CampaignBuilderResponse buildOptimizedCampaign(
             int monthlyInventory, CampaignBuilderRequest request) {
 
-        return new CampaignBuilderResponse();
+
+        CampaignBuilderResponse response = new CampaignBuilderResponse();
+        return response;
     }
 }
