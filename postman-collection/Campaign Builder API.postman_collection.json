@@ -1,0 +1,175 @@
+{
+  "info": {
+    "_postman_id": "be917a83-c80e-43e7-9aee-b3a8f65d7def",
+    "name": "Campaign Builder API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get best campaigns while monthly Inventory is 32356000",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "7ee30970-cc50-4e20-8833-6465e00734a6",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"campaignInformationList\": [\n        {\n            \"customer\": \"Acme\",\n            \"impressionsPerCampaign\": 2000000,\n            \"pricePerCampaign\": 200\n        },\n        {\n            \"customer\": \"Lorem\",\n            \"impressionsPerCampaign\": 3500000,\n            \"pricePerCampaign\": 400\n        },\n        {\n            \"customer\": \"Ipsum\",\n            \"impressionsPerCampaign\": 2300000,\n            \"pricePerCampaign\": 210\n        },\n        {\n            \"customer\": \"Dolor\",\n            \"impressionsPerCampaign\": 8000000,\n            \"pricePerCampaign\": 730\n        },\n        {\n            \"customer\": \"SIT\",\n            \"impressionsPerCampaign\": 10000000,\n            \"pricePerCampaign\": 1000\n        },\n        {\n            \"customer\": \"Amet\",\n            \"impressionsPerCampaign\": 1500000,\n            \"pricePerCampaign\": 160\n        },\n        {\n            \"customer\": \"Mauris\",\n            \"impressionsPerCampaign\": 1000000,\n            \"pricePerCampaign\": 100\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/campaign?monthlyInventory=32356000",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "campaign"
+          ],
+          "query": [
+            {
+              "key": "monthlyInventory",
+              "value": "32356000"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get best campaigns while monthly Inventory is 50000000",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "7ee30970-cc50-4e20-8833-6465e00734a6",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"campaignInformationList\": [\n        {\n            \"customer\": \"Acme\",\n            \"impressionsPerCampaign\": 1,\n            \"pricePerCampaign\": 0\n        },\n        {\n            \"customer\": \"Lorem\",\n            \"impressionsPerCampaign\": 2,\n            \"pricePerCampaign\": 2\n        },\n        {\n            \"customer\": \"Ipsum\",\n            \"impressionsPerCampaign\": 3,\n            \"pricePerCampaign\": 2\n        },\n        {\n            \"customer\": \"Dolor\",\n            \"impressionsPerCampaign\": 70000,\n            \"pricePerCampaign\": 71000\n        },\n        {\n            \"customer\": \"Mauris\",\n            \"impressionsPerCampaign\": 49000000,\n            \"pricePerCampaign\": 50000000\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/invidi/campaign?monthlyInventory=50000000",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "invidi",
+            "campaign"
+          ],
+          "query": [
+            {
+              "key": "monthlyInventory",
+              "value": "50000000"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get best campaigns while monthly Inventory is 2000000000",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "7ee30970-cc50-4e20-8833-6465e00734a6",
+            "exec": [
+              "pm.test(\"Status code is 500\", function () {",
+              "    pm.response.to.have.status(500);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"campaignInformationList\": [\n        {\n            \"customer\": \"Acme\",\n            \"impressionsPerCampaign\": 1000000,\n            \"pricePerCampaign\": 5000\n        },\n        {\n            \"customer\": \"Lorem\",\n            \"impressionsPerCampaign\": 2000000,\n            \"pricePerCampaign\": 9000\n        },\n        {\n            \"customer\": \"Ipsum\",\n            \"impressionsPerCampaign\": 3000000,\n            \"pricePerCampaign\": 20000\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/invidi/campaign?monthlyInventory=2000000000",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "invidi",
+            "campaign"
+          ],
+          "query": [
+            {
+              "key": "monthlyInventory",
+              "value": "2000000000"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
