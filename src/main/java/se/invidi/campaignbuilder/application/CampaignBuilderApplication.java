@@ -8,7 +8,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class CampaignBuilderApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(CampaignBuilderApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(CampaignBuilderApplication.class, args);
+  }
 }
