@@ -4,7 +4,7 @@ This spring-boot application is used for drawing the best possible combination o
 
 Some facts before building and running the micro-service,
 
-Lambok is used to generate getters and setters for those object automatically. In case, you are familiar with lambok and using it in intellij, you can skip the below additional step and build the application directly.
+Lambok is used to generate getters and setters for the object automatically. In case, you are familiar with lambok and using it in intellij, you can skip the below additional step and build the application directly.
 
 To use lambok in Intellij, 
 
